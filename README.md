@@ -5,6 +5,7 @@
 - YouTube: https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w
 - Instagram: https://www.instagram.com/passion.econclass
 - Blog: https://blog.naver.com/passionchoi55
+- Podcast: https://podcasts.apple.com/kr/podcast/id1650713547
 
 ## GitHub Pages로 배포하기
 
