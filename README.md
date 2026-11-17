@@ -1,0 +1,23 @@
+# 쓸공언니 홍보 사이트
+
+쓸데없이 공부 많이하는 언니들. 미국회계사 언니들이 들려주는 국제 경제 뉴스와 경제·투자 책 이야기.
+
+- YouTube: https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w
+- Instagram: https://www.instagram.com/passion.econclass
+- Blog: https://blog.naver.com/passionchoi55
+
+## GitHub Pages로 배포하기
+
+1. 저장소 **Settings → Pages** 로 이동
+2. **Source**: `Deploy from a branch`
+3. **Branch**: 배포할 브랜치와 `/ (root)` 를 선택하고 **Save**
+4. 1~2분 뒤 `https://seongyeolpark.github.io/passsion/` 에서 확인
+
+## 내용 수정하기
+
+모든 내용은 `index.html` 한 파일에 있어요.
+
+- **새 영상 추가**: `<script>` 안의 `VIDEOS` 배열 맨 앞에 `["영상ID", "208화. 제목"]` 을 추가하세요.
+  영상 ID는 유튜브 주소 `watch?v=` 뒤의 11글자예요. 첫 번째 영상이 자동으로 "NEW" 대표 영상이 돼요.
+- **숫자(구독자·에피소드·이웃 수)**: `data-to="..."` 값을 바꾸세요.
+- **블로그 글 / 인스타 카드**: `#blog`, `#insta` 섹션의 텍스트를 바꾸세요.
