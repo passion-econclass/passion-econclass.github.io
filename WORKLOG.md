@@ -2,7 +2,7 @@
 
 - 작업일: 2026-11-17
 - 주소: https://seongyeolpark.github.io/passsion/ (GitHub Pages, `main` 브랜치 · `/ (root)`)
-- 파일: `index.html` 한 파일로 된 정적 사이트, `.nojekyll`, `README.md`(수정 방법), `WORKLOG.md`(이 문서)
+- 파일: `index.html` 한 파일로 된 정적 사이트, `.nojekyll`, `README.md`(수정 방법), `WORKLOG.md`(이 문서), `CLAUDE.md`(Claude 작업 안내)
 
 ## 1. 연결된 채널
 
@@ -28,6 +28,8 @@
 | 7 | 워런 버핏 글 2개 추가 | `09a71e8` |
 | 8 | 하워드 막스 글 추가, 블록 이름을 「거장들에게 배우는 투자」로 변경 | `41b5c68` |
 | 9 | Instagram 공식 퍼가기(embed) 준비 (게시물 주소를 넣으면 실제 게시물 표시) | `54b3ac1` |
+| 10 | 작업 기록(`WORKLOG.md`) 작성, `README.md`를 현재 상태에 맞게 수정 | `232897a` |
+| 11 | `CLAUDE.md` 작성 (구조, 배포, 디자인 원칙, 데이터 출처, 제약, 확인 방법) | 이 커밋 |
 
 ## 3. 현재 디자인
 
