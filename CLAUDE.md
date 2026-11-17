@@ -33,7 +33,7 @@
 |---|---|---|
 | 영상 목록 | `<script>`의 `VIDEOS` 배열 `[영상ID, "N화. 제목"]`, 최신이 맨 앞 | https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w/videos 페이지 HTML의 `videoId` / `lockupViewModel` |
 | 영상 주제 필터 | `CATS` 배열의 정규식 | 제목 키워드로 자동 분류 |
-| 숫자 정보 | `.facts` 영역의 `.num` | YouTube 구독자 수, 블로그 이웃 수 |
+| 숫자 정보 | `.facts` 영역의 `.num` | Apple 팟캐스트 팔로워(37,000+, 사용자 제공: Apple은 공개하지 않음), YouTube 구독자 수, 블로그 이웃 수 |
 | 블로그 글 | `#blog` 섹션(대표 글, 글 목록, 경제 수업 노트, 연금 가이드, 거장들에게 배우는 투자) | RSS `https://rss.blog.naver.com/passionchoi55.xml` (최근 50개), 전체 목록 `https://blog.naver.com/PostTitleListAsync.naver?blogId=passionchoi55&currentPage=N&countPerPage=30` |
 | 팟캐스트 | `https://podcasts.apple.com/kr/podcast/id1650713547` | iTunes Search API (`itunes.apple.com/search?media=podcast`) |
 | Instagram | `#insta` 섹션 카드, `IG_POSTS` 배열 | 사용자가 보낸 캡처 |
@@ -51,6 +51,8 @@
 
 ## 결정된 사항
 
+- 사이트에 "US CPA" / "미국회계사 진행" 표기를 넣지 않아요(사용자 요청). 소개 문장의 "미국회계사 언니들"은 채널 소개 문구라 남아 있어요.
+- 팟빵 접속 허용은 사용자가 거절했어요. 팟캐스트 숫자는 사용자에게 물어봐요.
 - 진행자 소개에는 **최열정** 님만 넣어요. 팟캐스트에는 정관리 님도 진행자로 나오지만, 사용자가 추가하지 않기로 했어요.
 - 하워드 막스 글(223997577523)은 블로그 대표 글과 「거장들에게 배우는 투자」 두 곳에 들어가 있어요. 사용자가 바꾸자고 하지 않았어요.
 - 'CMA·ISA·IRP 한눈에!' 글은 IRP를 다뤄서 연금 가이드 3층(개인연금)에 넣었어요.
