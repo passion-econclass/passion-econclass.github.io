@@ -166,6 +166,22 @@ section.alt{background:var(--paper);border-block:1px solid var(--line)}
 .post-list h4{grid-column:1;font-size:1.02rem;font-weight:500;color:var(--ink);line-height:1.5}
 .post-list .arr{grid-column:2;grid-row:1/3;align-self:center;color:var(--muted)}
 
+/* series */
+.series{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.series-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:24px}
+.series-head h3{font-size:clamp(1.4rem,2.8vw,1.75rem);margin-bottom:6px}
+.series-head p{color:var(--muted);max-width:560px}
+.series-list{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:n}
+@media (max-width:980px){.series-list{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.series-list{grid-template-columns:1fr}}
+.note-card{position:relative;display:flex;flex-direction:column;gap:6px;padding:22px 20px 24px;background:var(--bg);border:1px solid var(--line);border-radius:12px;transition:border-color .2s,box-shadow .2s,transform .2s}
+.note-card:hover{border-color:#cfc3b2;box-shadow:var(--shadow);transform:translateY(-2px)}
+.note-card::before{content:"";position:absolute;left:20px;right:20px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--green);opacity:.75}
+.note-no{font-family:"Noto Serif KR",serif;font-size:1.5rem;color:var(--gold);line-height:1.2}
+.note-card h4{font-size:1.05rem;line-height:1.45}
+.note-card p{font-size:.88rem;color:var(--muted);line-height:1.6}
+@media (max-width:640px){.note-card{display:grid;grid-template-columns:auto 1fr;column-gap:16px}.note-no{grid-row:1/3;align-self:center}}
+
 /* instagram */
 .igrow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 @media (max-width:880px){.igrow{grid-template-columns:repeat(3,1fr)}}
@@ -362,6 +378,23 @@ footer a:hover{color:var(--ink)}
         <a href="https://blog.naver.com/passionchoi55/223935874321" target="_blank" rel="noopener"><span class="kind">경제 수업 노트</span><h4>복리와 장기투자, 초보 투자자의 가장 강력한 무기</h4><span class="arr">→</span></a>
         <a href="https://blog.naver.com/passionchoi55/223927026553" target="_blank" rel="noopener"><span class="kind">콘텐츠 제작 노트</span><h4>저성장 시대, 배당투자가 답이다!</h4><span class="arr">→</span></a>
         <a href="https://blog.naver.com/passionchoi55/223802432854" target="_blank" rel="noopener"><span class="kind">콘텐츠 제작 노트</span><h4>부자들의 소비 습관 5가지! 돈이 새는 걸 막는 방법은?</h4><span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="series reveal">
+      <div class="series-head">
+        <div>
+          <span class="label">SERIES</span>
+          <h3 class="serif">경제 수업 노트</h3>
+          <p>경제가 처음인 분들을 위한 기초 강의 노트. 1편부터 순서대로 읽으면 경제의 큰 그림이 그려집니다.</p>
+        </div>
+        <a class="btn btn-line" href="https://blog.naver.com/passionchoi55/223880709037" target="_blank" rel="noopener">1편부터 읽기 →</a>
+      </div>
+      <div class="series-list">
+      <a class="note-card" href="https://blog.naver.com/passionchoi55/223880709037" target="_blank" rel="noopener"><span class="note-no">#1</span><h4 class="serif">경제가 뭐길래?</h4><p>실물경제와 금융경제로 세상 읽기</p></a>
+      <a class="note-card" href="https://blog.naver.com/passionchoi55/223883100692" target="_blank" rel="noopener"><span class="note-no">#2</span><h4 class="serif">‘경기’가 뭐예요?</h4><p>요즘 경기가 안 좋다는데…</p></a>
+      <a class="note-card" href="https://blog.naver.com/passionchoi55/223886523846" target="_blank" rel="noopener"><span class="note-no">#3</span><h4 class="serif">돈의 속성과 자본소득</h4><p>자본소득이 중요한 이유</p></a>
+      <a class="note-card" href="https://blog.naver.com/passionchoi55/223888592340" target="_blank" rel="noopener"><span class="note-no">#4</span><h4 class="serif">돈의 증식 메커니즘</h4><p>자본주의 속에서 돈이 불어나는 원리</p></a>
+      <a class="note-card" href="https://blog.naver.com/passionchoi55/223903570688" target="_blank" rel="noopener"><span class="note-no">#5</span><h4 class="serif">물가와 인플레이션</h4><p>완벽 정리</p></a>
       </div>
     </div>
   </div>
