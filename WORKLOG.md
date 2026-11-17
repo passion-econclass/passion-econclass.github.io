@@ -1,7 +1,8 @@
 # 쓸공언니 홍보 사이트 작업 기록
 
 - 작업일: 2026-11-17
-- 주소: https://seongyeolpark.github.io/passsion/ (GitHub Pages, `main` 브랜치 · `/ (root)`)
+- 주소: https://passion-econclass.github.io/ (GitHub Pages, `main` 브랜치 · `/ (root)`)
+- 저장소: `passion-econclass/passion-econclass.github.io` (조직 `passion-econclass`, 예전 저장소에서 옮겨 옴)
 - 파일: `index.html` 한 파일로 된 정적 사이트, `.nojekyll`, `README.md`(수정 방법), `WORKLOG.md`(이 문서), `CLAUDE.md`(Claude 작업 안내)
 
 ## 1. 연결된 채널
@@ -41,6 +42,7 @@
 | 20 | 상단 메뉴 오른쪽에 유튜브·팟캐스트 아이콘 추가 (유튜브 · 팟캐스트 · 인스타그램 · 블로그 순) | — |
 | 21 | 소개 섹션 설명 문장 수정 ("어렵게만 느껴지는 경제를 일상의 언어로 풀어 드립니다…"). 제목 "쓸데없을 만큼 깊게 공부하고, 쓸모 있을 만큼 쉽게 전합니다"는 사용자 요청으로 유지 | — |
 | 22 | 소개 제목을 "쓸데 없을 만큼 … / 쓸모 있을 만큼 …"으로 띄어 써서 대구를 맞춤 (사용자 요청, 의도한 띄어쓰기) | — |
+| 23 | **주소 변경**: 주소에 개인 이름이 드러나지 않도록 GitHub 조직 `passion-econclass`를 만들고 저장소를 옮긴 뒤 이름을 `passion-econclass.github.io`로 변경. 새 주소 https://passion-econclass.github.io/ 확인 (`main`과 동일, 데스크톱·모바일 정상, 예전 주소는 404) | — |
 
 ## 3. 현재 디자인
 
@@ -104,4 +106,6 @@
 - **하워드 막스 글이 두 번 나와요.** 블로그 대표 글과 「거장들에게 배우는 투자」에 같은 글이 있어요. 원하면 대표 글을 다른 글로 바꿀 수 있어요.
 - **진행자 소개**: 팟캐스트에는 진행자가 정관리·최열정 두 분으로 나와 있지만, 사이트에는 최열정 님만 소개하기로 했어요.
 - **기본 브랜치**: 저장소 기본 브랜치가 작업 브랜치로 되어 있다면 **Settings → General → Default branch**에서 `main`으로 바꾸세요.
-- **작업 환경 허용 사이트**: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, 사용자가 직접 추가한 blog.naver.com, rss.blog.naver.com, 그리고 배포 확인용 seongyeolpark.github.io.
+- **예전 주소는 열리지 않아요.** 개인 계정 주소는 이제 404가 떠요. 예전 주소를 어딘가에 공유했다면 새 주소로 바꿔 주세요.
+- **Claude 연결**: 이 조직에 Claude GitHub 앱이 설치되어 있어야 Claude가 이 저장소에 바로 푸시할 수 있어요.
+- **작업 환경 허용 사이트**: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, 사용자가 직접 추가한 blog.naver.com, rss.blog.naver.com, 그리고 배포 확인용 passion-econclass.github.io.

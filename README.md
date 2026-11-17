@@ -12,7 +12,7 @@
 1. 저장소 **Settings → Pages** 로 이동
 2. **Source**: `Deploy from a branch`
 3. **Branch**: `main` 과 `/ (root)` 를 선택하고 **Save**
-4. 1~2분 뒤 `https://seongyeolpark.github.io/passsion/` 에서 확인
+4. 1~2분 뒤 `https://passion-econclass.github.io/` 에서 확인
 
 ## 내용 수정하기
 

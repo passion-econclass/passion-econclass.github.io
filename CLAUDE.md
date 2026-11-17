@@ -12,7 +12,8 @@
 
 ## 배포
 
-- GitHub Pages: `main` 브랜치, `/ (root)` → https://seongyeolpark.github.io/passsion/
+- 저장소: `passion-econclass/passion-econclass.github.io` (조직 `passion-econclass`). 개인 계정에서 이 조직으로 옮겨 왔어요. 사용자 개인 이름이 드러나지 않게 하려고 옮긴 것이니, 사이트나 문서에 예전 계정 이름과 주소를 쓰지 마세요.
+- GitHub Pages: `main` 브랜치, `/ (root)` → https://passion-econclass.github.io/
 - 작업 브랜치에 커밋한 뒤, 사용자가 원하면 같은 커밋을 `main`에도 푸시해요. 지금까지는 매번 두 브랜치를 같은 커밋으로 맞춰 왔어요:
   - `git push origin <작업 브랜치>`
   - `git push origin <작업 브랜치>:main`
@@ -45,7 +46,7 @@
 ## 제약 사항
 
 - **Instagram은 자동으로 가져오지 않아요.** 로그인 없이는 로그인 화면으로 넘어가요. 비공식 API로 가져오려던 시도는 권한 검사에서 거부됐어요. 게시물은 사용자가 준 주소를 `IG_POSTS`에 넣어 공식 퍼가기(embed)로 보여 줘요.
-- 작업 환경 네트워크는 허용 사이트만 접속할 수 있어요. 지금 허용된 곳: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, blog.naver.com, rss.blog.naver.com, seongyeolpark.github.io(배포 확인용).
+- 작업 환경 네트워크는 허용 사이트만 접속할 수 있어요. 지금 허용된 곳: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, blog.naver.com, rss.blog.naver.com, passion-econclass.github.io(배포 확인용).
 - 채널 프로필 이미지(`yt3.googleusercontent.com`)는 작업 환경에서 막혀서 스크린샷에 빈칸으로 나와요. 실제 브라우저에서는 정상이에요.
 - 숫자와 영상 목록은 자동으로 바뀌지 않아요. 업데이트를 요청받으면 위 출처에서 다시 가져와요.
 
