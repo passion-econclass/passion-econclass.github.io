@@ -29,7 +29,8 @@
 | 8 | 하워드 막스 글 추가, 블록 이름을 「거장들에게 배우는 투자」로 변경 | `41b5c68` |
 | 9 | Instagram 공식 퍼가기(embed) 준비 (게시물 주소를 넣으면 실제 게시물 표시) | `54b3ac1` |
 | 10 | 작업 기록(`WORKLOG.md`) 작성, `README.md`를 현재 상태에 맞게 수정 | `232897a` |
-| 11 | `CLAUDE.md` 작성 (구조, 배포, 디자인 원칙, 데이터 출처, 제약, 확인 방법) | 이 커밋 |
+| 11 | `CLAUDE.md` 작성 (구조, 배포, 디자인 원칙, 데이터 출처, 제약, 확인 방법) | `3b0182f` |
+| 12 | GitHub Pages 배포 확인: 사이트가 `main`의 `index.html`과 동일, 데스크톱·모바일 정상 | — |
 
 ## 3. 현재 디자인
 
@@ -93,4 +94,4 @@
 - **하워드 막스 글이 두 번 나와요.** 블로그 대표 글과 「거장들에게 배우는 투자」에 같은 글이 있어요. 원하면 대표 글을 다른 글로 바꿀 수 있어요.
 - **진행자 소개**: 팟캐스트에는 진행자가 정관리·최열정 두 분으로 나와 있지만, 사이트에는 최열정 님만 소개하기로 했어요.
 - **기본 브랜치**: 저장소 기본 브랜치가 작업 브랜치로 되어 있다면 **Settings → General → Default branch**에서 `main`으로 바꾸세요.
-- **작업 환경 허용 사이트**: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, 그리고 사용자가 직접 추가한 blog.naver.com, rss.blog.naver.com.
+- **작업 환경 허용 사이트**: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, 사용자가 직접 추가한 blog.naver.com, rss.blog.naver.com, 그리고 배포 확인용 seongyeolpark.github.io.

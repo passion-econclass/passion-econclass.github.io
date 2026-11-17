@@ -45,7 +45,7 @@
 ## 제약 사항
 
 - **Instagram은 자동으로 가져오지 않아요.** 로그인 없이는 로그인 화면으로 넘어가요. 비공식 API로 가져오려던 시도는 권한 검사에서 거부됐어요. 게시물은 사용자가 준 주소를 `IG_POSTS`에 넣어 공식 퍼가기(embed)로 보여 줘요.
-- 작업 환경 네트워크는 허용 사이트만 접속할 수 있어요. 지금 허용된 곳: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, blog.naver.com, rss.blog.naver.com.
+- 작업 환경 네트워크는 허용 사이트만 접속할 수 있어요. 지금 허용된 곳: www.youtube.com, youtube.com, i.ytimg.com, www.instagram.com, itunes.apple.com, podcasts.apple.com, blog.naver.com, rss.blog.naver.com, seongyeolpark.github.io(배포 확인용).
 - 채널 프로필 이미지(`yt3.googleusercontent.com`)는 작업 환경에서 막혀서 스크린샷에 빈칸으로 나와요. 실제 브라우저에서는 정상이에요.
 - 숫자와 영상 목록은 자동으로 바뀌지 않아요. 업데이트를 요청받으면 위 출처에서 다시 가져와요.
 
