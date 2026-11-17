@@ -142,7 +142,7 @@ section.alt{background:var(--paper);border-block:1px solid var(--line)}
 .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 22px}
 @media (max-width:880px){.vgrid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:540px){.vgrid{grid-template-columns:1fr}}
-.vcard{cursor:pointer}
+.vcard{display:block;cursor:pointer}
 .vcard .thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--sand)}
 .vcard .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .vcard:hover .thumb img{transform:scale(1.03)}
@@ -258,12 +258,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 footer .links{display:flex;gap:20px}
 footer a:hover{color:var(--ink)}
 
-/* modal */
-.modal{position:fixed;inset:0;z-index:100;background:rgba(30,24,18,.82);display:none;place-items:center;padding:16px}
-.modal.open{display:grid}
-.modal .box{width:min(960px,100%);aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
-.modal iframe{width:100%;height:100%;border:0}
-.modal .x{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:50%;border:0;background:var(--paper);color:var(--ink);font-size:1.1rem;cursor:pointer}
 
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -390,7 +384,7 @@ footer a:hover{color:var(--ink)}
     <div class="sec-head reveal">
       <span class="label">EPISODES</span>
       <h2 class="sec-title serif">최신 에피소드</h2>
-      <p class="sec-sub">썸네일을 누르면 바로 재생됩니다. 관심 있는 주제를 골라 보세요.</p>
+      <p class="sec-sub">썸네일을 누르면 유튜브에서 바로 볼 수 있어요. 관심 있는 주제를 골라 보세요.</p>
     </div>
 
     <div class="featured reveal" id="featured"></div>
@@ -597,10 +591,6 @@ footer a:hover{color:var(--ink)}
   </div>
 </footer>
 
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="영상 재생">
-  <button class="x" id="closeModal" aria-label="닫기">✕</button>
-  <div class="box" id="modalBox"></div>
-</div>
 
 <script>
 // 최신 영상 목록 — 새 영상이 올라오면 맨 앞에 ["영상ID", "제목"] 을 추가하세요.
@@ -649,19 +639,21 @@ const catOf = t => CATS.slice(1).find(c => c.re.test(t)) || CATS[5];
 const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const split = t => { const m = t.match(/^(\d+)화?\.\s*(.*)$/); return m ? [m[1], m[2]] : ["", t]; };
 const thumb = (id, q="hqdefault") => `https://i.ytimg.com/vi/${id}/${q}.jpg`;
+// 대부분의 영상이 다른 사이트 재생(퍼가기)이 꺼져 있어서, 누르면 유튜브(휴대폰은 유튜브 앱)로 이동해요.
+const watch = id => `https://www.youtube.com/watch?v=${id}`;
 
 const [fid, ftitle] = VIDEOS[0];
 const [fep, fname] = split(ftitle);
 document.getElementById("featured").innerHTML = `
-  <div class="frame" data-id="${fid}">
+  <a class="frame" href="${watch(fid)}" target="_blank" rel="noopener" aria-label="${esc(fname)} 유튜브에서 보기">
     <img src="${thumb(fid,"maxresdefault")}" onerror="this.src='${thumb(fid)}'" alt="">
     <div class="play"><i></i></div>
-  </div>
+  </a>
   <div>
     <span class="ep">최신 · ${fep}화</span>
     <h3 class="serif">${esc(fname)}</h3>
     <p>쓸공언니의 가장 최근 에피소드입니다.</p>
-    <a class="btn btn-line" href="https://www.youtube.com/watch?v=${fid}" target="_blank" rel="noopener">유튜브에서 보기 →</a>
+    <a class="btn btn-line" href="${watch(fid)}" target="_blank" rel="noopener">유튜브에서 보기 →</a>
   </div>`;
 
 let cur = "all", shown = 9;
@@ -678,26 +670,15 @@ function render(){
   const list = VIDEOS.slice(1).filter(([,t]) => cur === "all" || catOf(t).key === cur);
   grid.innerHTML = list.slice(0, shown).map(([id, t]) => {
     const [ep, name] = split(t);
-    return `<article class="vcard" data-id="${id}">
+    return `<a class="vcard" href="${watch(id)}" target="_blank" rel="noopener">
       <div class="thumb"><img loading="lazy" src="${thumb(id)}" alt=""><div class="play"><i></i></div></div>
       <div class="meta"><div class="info"><b>${ep}화</b><span>·</span><span>${catOf(t).label}</span></div><h4>${esc(name)}</h4></div>
-    </article>`;
+    </a>`;
   }).join("");
   moreBtn.style.display = list.length > shown ? "" : "none";
 }
 moreBtn.addEventListener("click", () => { shown += 9; render(); });
 render();
-
-const modal = document.getElementById("modal"), box = document.getElementById("modalBox");
-document.addEventListener("click", e => {
-  const el = e.target.closest("[data-id]"); if (!el) return;
-  box.innerHTML = `<iframe src="https://www.youtube.com/embed/${el.dataset.id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
-  modal.classList.add("open"); document.body.style.overflow = "hidden";
-});
-function closeModal(){ modal.classList.remove("open"); box.innerHTML = ""; document.body.style.overflow = ""; }
-document.getElementById("closeModal").addEventListener("click", closeModal);
-modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
 // 인스타그램 게시물 — 게시물 주소를 넣으면 실제 게시물이 표시됩니다(비어 있으면 카드 디자인이 보여요).
 // 예: "https://www.instagram.com/p/ABCdef123/"
