@@ -213,6 +213,8 @@ section.alt{background:var(--paper);border-block:1px solid var(--line)}
 @media (max-width:540px){.buffett-cards{grid-template-columns:1fr}.buffett-cards a{min-height:0}}
 
 /* instagram */
+.igembeds{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;align-items:start}
+.igembeds .instagram-media{margin:0!important;min-width:0!important;width:100%!important;border-radius:12px!important;border:1px solid var(--line)!important;box-shadow:none!important}
 .igrow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 @media (max-width:880px){.igrow{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:540px){.igrow{grid-template-columns:repeat(2,1fr)}}
@@ -502,7 +504,8 @@ footer a:hover{color:var(--ink)}
       <h2 class="sec-title serif">카드뉴스로 만나는 경제</h2>
       <p class="sec-sub">책 소개, 하락장 마음가짐, 은퇴 설계까지. 짧고 단정하게 정리합니다.</p>
     </div>
-    <div class="igrow">
+    <div class="igembeds" id="igEmbeds" hidden></div>
+    <div class="igrow" id="igCards">
       <a class="igc reveal" style="--c:#5a4636" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>이번 주의 책</small><b>어떤 책을<br>공부해 볼까요?</b><span>머니 트렌드 2027</span></a>
       <a class="igc reveal" style="--c:#4f6f80" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>쓸공언니</small><b>폭락장,<br>마음 굳게 먹으면<br>버틸 수 있을까?</b><span>나를 지켜 줄 장치</span></a>
       <a class="igc light reveal" style="--c:#efe8dc" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>리포트</small><b>43세에 퇴직,<br>인생은 80대까지</b><span>남은 30년, 무엇으로 살까</span></a>
@@ -680,6 +683,18 @@ function closeModal(){ modal.classList.remove("open"); box.innerHTML = ""; docum
 document.getElementById("closeModal").addEventListener("click", closeModal);
 modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+// 인스타그램 게시물 — 게시물 주소를 넣으면 실제 게시물이 표시됩니다(비어 있으면 카드 디자인이 보여요).
+// 예: "https://www.instagram.com/p/ABCdef123/"
+const IG_POSTS = [];
+if (IG_POSTS.length) {
+  const wrap = document.getElementById("igEmbeds");
+  wrap.innerHTML = IG_POSTS.map(u => `<blockquote class="instagram-media" data-instgrm-permalink="${esc(u)}" data-instgrm-version="14"><a href="${esc(u)}" target="_blank" rel="noopener">Instagram에서 보기</a></blockquote>`).join("");
+  wrap.hidden = false;
+  document.getElementById("igCards").hidden = true;
+  const sc = document.createElement("script"); sc.async = true; sc.src = "https://www.instagram.com/embed.js";
+  document.body.appendChild(sc);
+}
 
 const io = new IntersectionObserver(es => es.forEach(en => {
   if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
