@@ -198,6 +198,20 @@ section.alt{background:var(--paper);border-block:1px solid var(--line)}
 .tier-links i{font-style:normal;color:var(--muted)}
 @media (max-width:640px){.tier{grid-template-columns:1fr}.tier-label{flex-direction:row;align-items:baseline;gap:10px;padding:14px 18px;border-left:0;border-top:3px solid var(--t)}.tier-links a{padding:14px 18px}}
 
+/* buffett */
+.buffett{margin-top:56px;display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center;padding:40px;border-radius:var(--radius);background:var(--ink);color:#d9cfc1}
+.buffett .label{color:#d9a67e}
+.buffett-intro h3{color:#fff;font-size:clamp(1.4rem,2.8vw,1.75rem);margin-bottom:10px}
+.buffett-intro p{font-size:.96rem;opacity:.85}
+.buffett-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.buffett-cards a{display:flex;flex-direction:column;gap:10px;padding:22px;min-height:180px;border-radius:12px;background:rgba(255,253,249,.06);border:1px solid rgba(255,253,249,.14);transition:background .2s,border-color .2s}
+.buffett-cards a:hover{background:rgba(255,253,249,.11);border-color:rgba(255,253,249,.3)}
+.buffett-cards .kind{font-size:.78rem;color:#d9a67e;font-weight:500}
+.buffett-cards h4{color:#fff;font-size:1.08rem;line-height:1.5;flex:1}
+.buffett-cards .go{font-size:.88rem;opacity:.8}
+@media (max-width:880px){.buffett{grid-template-columns:1fr;padding:30px 24px}}
+@media (max-width:540px){.buffett-cards{grid-template-columns:1fr}.buffett-cards a{min-height:0}}
+
 /* instagram */
 .igrow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 @media (max-width:880px){.igrow{grid-template-columns:repeat(3,1fr)}}
@@ -452,6 +466,25 @@ footer a:hover{color:var(--ink)}
             <a href="https://blog.naver.com/passionchoi55/223857814016" target="_blank" rel="noopener"><span>CMA·ISA·IRP 한눈에! 금융상품 분류와 활용법</span><i>→</i></a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="buffett reveal">
+      <div class="buffett-intro">
+        <span class="label">INVESTOR STORY</span>
+        <h3 class="serif">워런 버핏에게 배우는 투자</h3>
+        <p>오마하의 현인이 남긴 투자 철학과 주주서한, 그리고 4만 명이 모이는 버크셔 해서웨이 주주총회 이야기.</p>
+      </div>
+      <div class="buffett-cards">
+        <a href="https://blog.naver.com/passionchoi55/223879674079" target="_blank" rel="noopener">
+          <span class="kind">투자 철학 · 주주서한</span>
+          <h4 class="serif">워런 버핏 은퇴, 투자 철학과 주주서한 다시보기</h4>
+          <span class="go">읽기 →</span>
+        </a>
+        <a href="https://blog.naver.com/passionchoi55/223866584348" target="_blank" rel="noopener">
+          <span class="kind">버크셔 해서웨이 주주총회</span>
+          <h4 class="serif">4만 명이 모인 자본주의 축제, 워런 버핏 주주총회 이야기</h4>
+          <span class="go">읽기 →</span>
+        </a>
       </div>
     </div>
   </div>
