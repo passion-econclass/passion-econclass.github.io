@@ -4,274 +4,221 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>쓸공언니 · 쓸데없이 공부 많이하는 언니들</title>
-<meta name="description" content="미국회계사 언니들이 들려주는 국제 경제 뉴스와 경제·투자 책 이야기. 유튜브, 인스타그램, 블로그에서 만나요.">
+<meta name="description" content="미국회계사 언니들이 들려주는 국제 경제 뉴스와 경제·투자 책 이야기. 경제가 처음인 어른을 위한 공부.">
 <meta property="og:title" content="쓸공언니 · 쓸데없이 공부 많이하는 언니들">
 <meta property="og:description" content="미국회계사 언니들이 들려주는 국제 경제 뉴스와 경제·투자 책 이야기">
 <meta property="og:image" content="https://yt3.googleusercontent.com/DIlhgvPJqixxjpmbX3boRq_5Zn9wk3ph1y4Ae8iFNyf_1a1i8x4KRh33a6POR6ScYgn7p104rmQ=s900-c-k-c0x00ffffff-no-rj">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0b0820">
+<meta name="theme-color" content="#f7f3ec">
 <link rel="icon" href="https://yt3.googleusercontent.com/DIlhgvPJqixxjpmbX3boRq_5Zn9wk3ph1y4Ae8iFNyf_1a1i8x4KRh33a6POR6ScYgn7p104rmQ=s88-c-k-c0x00ffffff-no-rj">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0b0820; --bg2:#140f33; --ink:#f6f3ff; --muted:#b9b2d9; --line:rgba(255,255,255,.12);
-  --pink:#ff4fa3; --violet:#7b5cff; --gold:#ffc94d; --mint:#3be8b0; --sky:#4cc9ff;
-  --yt:#ff2b2b; --ig1:#feda75; --ig2:#d62976; --ig3:#962fbf; --nv:#03c75a;
-  --glass:rgba(255,255,255,.06); --radius:22px;
+  --bg:#f7f3ec; --paper:#fffdf9; --sand:#efe7da; --ink:#2b2621; --body:#4a423a; --muted:#7a6f63;
+  --line:#e3d9ca; --accent:#9c5a3c; --accent-d:#7f4730; --green:#3f5f52; --gold:#b98a4a;
+  --radius:14px; --shadow:0 1px 2px rgba(60,40,20,.05),0 8px 24px rgba(60,40,20,.06);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--body);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:16px;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased;word-break:keep-all}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
-.display{font-family:"Black Han Sans","Noto Sans KR",sans-serif;font-weight:400;letter-spacing:-.01em}
-.grad{background:linear-gradient(100deg,var(--gold),var(--pink) 45%,var(--violet) 75%,var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:shine 6s linear infinite}
-@keyframes shine{to{background-position:200% center}}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.serif{font-family:"Noto Serif KR",serif;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.accent{color:var(--accent)}
 
-/* ===== background ===== */
-.bg{position:fixed;inset:0;z-index:-2;overflow:hidden;background:radial-gradient(1200px 800px at 80% -10%,#2a1663 0%,transparent 60%),radial-gradient(900px 700px at -10% 30%,#3a0f4a 0%,transparent 60%),var(--bg)}
-.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;animation:float 18s ease-in-out infinite alternate}
-.blob.b1{width:520px;height:520px;background:var(--pink);top:-120px;left:-120px}
-.blob.b2{width:600px;height:600px;background:var(--violet);top:30%;right:-200px;animation-delay:-6s}
-.blob.b3{width:420px;height:420px;background:var(--sky);bottom:-160px;left:20%;opacity:.35;animation-delay:-12s}
-@keyframes float{0%{transform:translate(0,0) scale(1)}50%{transform:translate(60px,40px) scale(1.12)}100%{transform:translate(-40px,80px) scale(.95)}}
-.grid-bg{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 20%,transparent 75%);opacity:.35}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(247,243,236,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.2rem}
+.logo img{width:34px;height:34px;border-radius:50%;background:var(--sand)}
+.nav-links{display:flex;gap:28px;font-size:.95rem;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{padding:9px 18px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);font-weight:500;font-size:.9rem;white-space:nowrap;transition:background .2s,color .2s}
+.nav-cta:hover{background:var(--ink);color:var(--paper)}
+@media (max-width:820px){.nav-links{display:none}}
 
-/* ===== nav ===== */
-nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(11,8,32,.55);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{display:flex;align-items:center;gap:10px;font-size:1.35rem}
-.logo img{width:36px;height:36px;border-radius:50%;border:2px solid var(--pink)}
-.nav-links{display:flex;gap:6px}
-.nav-links a{padding:8px 14px;border-radius:999px;font-size:.92rem;color:var(--muted);transition:.25s}
-.nav-links a:hover{color:#fff;background:var(--glass)}
-.nav-cta{padding:9px 18px;border-radius:999px;background:var(--yt);font-weight:700;font-size:.9rem;box-shadow:0 6px 24px rgba(255,43,43,.4);white-space:nowrap}
-@media (max-width:760px){.nav-links{display:none}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;font-weight:500;font-size:.96rem;transition:background .2s,color .2s,border-color .2s;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--accent-d)}
+.btn-line{border-color:#cfc3b2;color:var(--ink);background:transparent}
+.btn-line:hover{border-color:var(--ink);background:var(--paper)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
 
-/* ===== hero ===== */
-.hero{padding:clamp(56px,10vw,120px) 0 60px;position:relative}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:.85rem;color:var(--muted);margin-bottom:22px}
-.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 var(--mint);animation:pulse 1.8s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
-.hero h1{font-size:clamp(3.4rem,11vw,7.4rem);line-height:.95;margin-bottom:18px}
-.hero h1 small{display:block;font-size:clamp(1.1rem,3.2vw,1.7rem);color:var(--ink);margin-top:14px;letter-spacing:0}
-.hero p.lead{font-size:clamp(1.02rem,2.2vw,1.2rem);color:var(--muted);max-width:560px;margin-bottom:30px}
-.hero p.lead b{color:#fff}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:16px;font-weight:700;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
-.btn svg{width:22px;height:22px;flex:none}
-.btn:hover{transform:translateY(-3px)}
-.btn-yt{background:var(--yt);box-shadow:0 10px 30px rgba(255,43,43,.35)}
-.btn-ig{background:linear-gradient(45deg,var(--ig1),#fa7e1e,var(--ig2),var(--ig3));box-shadow:0 10px 30px rgba(214,41,118,.35)}
-.btn-nv{background:var(--nv);box-shadow:0 10px 30px rgba(3,199,90,.3)}
-.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-100%);transition:transform .6s}
-.btn:hover::after{transform:translateX(100%)}
+/* hero */
+.hero{padding:clamp(56px,9vw,104px) 0 clamp(56px,8vw,88px)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
+.kicker{display:inline-block;font-size:.85rem;font-weight:500;color:var(--accent);letter-spacing:.08em;margin-bottom:18px}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.6rem);line-height:1.3;margin-bottom:22px}
+.hero .lead{font-size:clamp(1.02rem,1.8vw,1.14rem);color:var(--body);max-width:540px;margin-bottom:34px}
+.portrait{position:relative;justify-self:center;width:100%;max-width:380px}
+.portrait .ph{aspect-ratio:4/5;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;background:var(--sand);box-shadow:var(--shadow)}
+.portrait .ph img{width:100%;height:100%;object-fit:cover}
+.portrait .note{position:absolute;left:-28px;bottom:28px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow);font-size:.88rem;line-height:1.5}
+.portrait .note b{display:block;color:var(--ink);font-family:"Noto Serif KR",serif;font-size:1.02rem}
+@media (max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:44px}.portrait{max-width:300px;order:-1}.portrait .note{left:auto;right:-12px}}
 
-.hero-visual{position:relative;aspect-ratio:1;max-width:440px;justify-self:center;width:100%}
-.ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,var(--pink),var(--gold),var(--mint),var(--sky),var(--violet),var(--pink));animation:spin 10s linear infinite;padding:6px;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 6px),#000 calc(100% - 5px));mask:radial-gradient(farthest-side,transparent calc(100% - 6px),#000 calc(100% - 5px))}
-@keyframes spin{to{transform:rotate(360deg)}}
-.avatar{position:absolute;inset:18px;border-radius:50%;overflow:hidden;background:var(--bg2);box-shadow:0 30px 80px rgba(123,92,255,.45)}
-.avatar img{width:100%;height:100%;object-fit:cover}
-.chip{position:absolute;padding:10px 14px;border-radius:14px;background:rgba(20,15,51,.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);font-weight:700;font-size:.88rem;display:flex;align-items:center;gap:8px;animation:bob 5s ease-in-out infinite;white-space:nowrap}
-.chip .em{font-size:1.25rem}
-.chip.c1{top:6%;left:-6%}
-.chip.c2{top:44%;right:-10%;animation-delay:-1.6s}
-.chip.c3{bottom:4%;left:4%;animation-delay:-3.2s}
-@keyframes bob{50%{transform:translateY(-12px)}}
-@media (max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;text-align:center}
-  .hero p.lead{margin-inline:auto}
-  .cta-row{justify-content:center}
-  .hero-visual{max-width:320px;order:-1}
-  .chip.c1{left:-4%}.chip.c2{right:-4%}
-}
+/* facts */
+.facts{border-block:1px solid var(--line);background:var(--paper)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:28px 20px;text-align:center}
+.fact+.fact{border-left:1px solid var(--line)}
+.fact .num{font-family:"Noto Serif KR",serif;font-weight:700;color:var(--ink);font-size:clamp(1.5rem,3vw,2rem);line-height:1.2}
+.fact .lbl{font-size:.88rem;color:var(--muted);margin-top:4px}
+@media (max-width:700px){.facts .wrap{grid-template-columns:repeat(2,1fr)}.fact:nth-child(3){border-left:0}.fact:nth-child(n+3){border-top:1px solid var(--line)}}
 
-/* ===== ticker ===== */
-.ticker{border-block:1px solid var(--line);background:linear-gradient(90deg,rgba(255,79,163,.12),rgba(123,92,255,.12),rgba(76,201,255,.12));overflow:hidden;padding:14px 0;transform:rotate(-1.2deg);margin:20px -20px}
-.ticker-track{display:flex;gap:44px;width:max-content;animation:marquee 38s linear infinite}
-.ticker span{font-family:"Black Han Sans",sans-serif;font-size:1.35rem;white-space:nowrap;display:flex;align-items:center;gap:12px}
-.ticker .up{color:var(--mint)} .ticker .dn{color:var(--pink)}
-@keyframes marquee{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:clamp(72px,9vw,112px) 0}
+section.alt{background:var(--paper);border-block:1px solid var(--line)}
+.sec-head{margin-bottom:44px;max-width:640px}
+.sec-head.center{text-align:center;margin-inline:auto}
+.label{display:block;font-size:.8rem;font-weight:700;letter-spacing:.14em;color:var(--accent);margin-bottom:12px}
+.sec-title{font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.35;margin-bottom:14px}
+.sec-sub{color:var(--muted)}
 
-/* ===== sections ===== */
-section{padding:clamp(64px,9vw,110px) 0}
-.eyebrow{display:inline-block;font-weight:900;font-size:.8rem;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
-.sec-title{font-size:clamp(2rem,5.4vw,3.4rem);line-height:1.1;margin-bottom:14px}
-.sec-sub{color:var(--muted);max-width:620px;margin-bottom:40px}
-.center{text-align:center}.center .sec-sub{margin-inline:auto}
+/* about */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:880px){.pillars{grid-template-columns:1fr}}
+.pillar{padding:30px 28px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}
+.pillar .no{font-family:"Noto Serif KR",serif;color:var(--gold);font-size:.95rem;margin-bottom:14px;display:block}
+.pillar h3{font-size:1.2rem;margin-bottom:10px}
+.pillar p{color:var(--muted);font-size:.96rem}
 
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.stat{padding:26px 22px;border-radius:var(--radius);background:var(--glass);border:1px solid var(--line);position:relative;overflow:hidden}
-.stat::before{content:"";position:absolute;inset:auto -40% -60% auto;width:160px;height:160px;border-radius:50%;background:var(--c,var(--pink));filter:blur(50px);opacity:.45}
-.stat .num{font-family:"Black Han Sans",sans-serif;font-size:clamp(2.2rem,5vw,3.2rem);line-height:1}
-.stat .lbl{color:var(--muted);margin-top:8px;font-size:.95rem}
-@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.stat .num{font-size:2rem;white-space:nowrap}}
-
-/* about cards */
-.about{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{padding:30px 26px;border-radius:var(--radius);background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);transition:transform .35s,border-color .35s}
-.card:hover{transform:translateY(-6px) rotate(-.4deg);border-color:rgba(255,255,255,.3)}
-.card .ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:1.7rem;margin-bottom:18px;background:var(--bgc)}
-.card h3{font-size:1.25rem;margin-bottom:8px}
-.card p{color:var(--muted);font-size:.97rem}
-@media (max-width:900px){.about{grid-template-columns:1fr}}
-
-/* featured */
-.featured{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center;padding:22px;border-radius:28px;background:linear-gradient(135deg,rgba(255,79,163,.18),rgba(123,92,255,.18));border:1px solid var(--line);margin-bottom:46px}
-.featured .frame{border-radius:18px;overflow:hidden;aspect-ratio:16/9;position:relative;cursor:pointer;box-shadow:0 20px 60px rgba(0,0,0,.45)}
-.featured .frame img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.featured .frame:hover img{transform:scale(1.05)}
-.featured .new{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--yt);font-weight:900;font-size:.78rem;letter-spacing:.1em;margin-bottom:14px}
-.featured h3{font-size:clamp(1.4rem,3vw,2rem);line-height:1.3;margin-bottom:14px}
-.featured p{color:var(--muted);margin-bottom:22px}
-@media (max-width:900px){.featured{grid-template-columns:1fr}}
-.play{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(transparent 40%,rgba(0,0,0,.55))}
-.play i{width:74px;height:74px;border-radius:50%;background:rgba(255,43,43,.92);display:grid;place-items:center;box-shadow:0 0 0 10px rgba(255,43,43,.25);transition:transform .3s}
-.frame:hover .play i,.vcard:hover .play i{transform:scale(1.12)}
-.play i::before{content:"";border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:6px}
-
-/* filters */
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-.filters button{font:inherit;font-weight:700;font-size:.92rem;color:var(--muted);background:var(--glass);border:1px solid var(--line);padding:9px 16px;border-radius:999px;cursor:pointer;transition:.25s}
-.filters button:hover{color:#fff}
-.filters button.on{color:#140f33;background:linear-gradient(90deg,var(--gold),var(--pink));border-color:transparent}
-
-/* video grid */
-.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media (max-width:900px){.vgrid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.vgrid{grid-template-columns:1fr}}
-.vcard{border-radius:20px;overflow:hidden;background:var(--glass);border:1px solid var(--line);cursor:pointer;transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column;animation:pop .5s both}
-.vcard:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(123,92,255,.35)}
-@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.97)}}
-.vcard .thumb{aspect-ratio:16/9;position:relative;overflow:hidden;background:var(--bg2)}
-.vcard .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.vcard:hover .thumb img{transform:scale(1.07)}
-.vcard .play i{width:54px;height:54px;opacity:0;transition:opacity .3s,transform .3s}
-.vcard:hover .play i{opacity:1}
-.vcard .play i::before{border-left-width:16px;border-top-width:10px;border-bottom-width:10px;margin-left:4px}
-.ep{position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:8px;background:rgba(11,8,32,.8);font-weight:900;font-size:.8rem;backdrop-filter:blur(6px)}
-.vcard .meta{padding:16px 18px 20px}
-.vcard .tag{display:inline-block;font-size:.75rem;font-weight:900;padding:3px 9px;border-radius:6px;margin-bottom:8px;color:#140f33;background:var(--tc,var(--gold))}
-.vcard h4{font-size:1.02rem;line-height:1.45;font-weight:700}
-.more{display:flex;justify-content:center;margin-top:36px;gap:12px;flex-wrap:wrap}
-.btn-ghost{background:var(--glass);border:1px solid var(--line);font:inherit;color:inherit;cursor:pointer}
-
-/* channels */
-.channels{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media (max-width:900px){.channels{grid-template-columns:1fr}}
-.ch{position:relative;padding:34px 28px 30px;border-radius:26px;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .4s}
-.ch:hover{transform:translateY(-8px) scale(1.01)}
-.ch::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.18);right:-80px;top:-80px;transition:transform .6s}
-.ch:hover::after{transform:scale(1.4)}
-.ch.yt{background:linear-gradient(150deg,#ff2b2b,#a30d4a)}
-.ch.ig{background:linear-gradient(45deg,#f9a03f,#d62976 45%,#962fbf 80%,#4f5bd5)}
-.ch.nv{background:linear-gradient(150deg,#03c75a,#028a7e)}
-.ch .big{width:62px;height:62px;border-radius:18px;background:rgba(255,255,255,.2);display:grid;place-items:center;margin-bottom:22px}
-.ch .big svg{width:34px;height:34px}
-.ch h3{font-family:"Black Han Sans",sans-serif;font-weight:400;font-size:2rem;line-height:1.1;margin-bottom:8px}
-.ch p{opacity:.92;font-size:.98rem}
-.ch .handle{margin-top:24px;display:flex;align-items:center;justify-content:space-between;font-weight:700;padding-top:18px;border-top:1px solid rgba(255,255,255,.3)}
-.ch .arrow{width:42px;height:42px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font-size:1.2rem;transition:transform .3s}
-.ch:hover .arrow{transform:rotate(-45deg)}
-
-/* final cta */
-.final{border-radius:32px;padding:clamp(40px,7vw,80px) clamp(22px,5vw,60px);text-align:center;position:relative;overflow:hidden;background:linear-gradient(120deg,#2b145f,#4a1352 50%,#14306b);border:1px solid var(--line)}
-.final::before{content:"";position:absolute;inset:-50%;background:conic-gradient(from 0deg,transparent,rgba(255,201,77,.25),transparent 30%);animation:spin 12s linear infinite}
-.final>*{position:relative}
-.final h2{font-size:clamp(2rem,6vw,3.8rem);line-height:1.15;margin-bottom:16px}
-.final p{color:var(--muted);margin-bottom:30px}
-.final .cta-row{justify-content:center}
-
-/* host */
-.host{margin-top:28px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:28px;border-radius:26px;background:linear-gradient(120deg,rgba(255,201,77,.12),rgba(255,79,163,.12));border:1px solid var(--line)}
-.host-pic{width:110px;height:110px;border-radius:50%;display:grid;place-items:center;font-size:3.2rem;background:conic-gradient(from 90deg,var(--gold),var(--pink),var(--violet),var(--gold));box-shadow:0 12px 40px rgba(255,79,163,.4)}
-.host h3{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.1;margin-bottom:8px}
-.host p{color:var(--muted);margin-bottom:12px}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tags span{font-size:.82rem;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--glass);border:1px solid var(--line)}
-@media (max-width:640px){.host{grid-template-columns:1fr;text-align:center;justify-items:center}.tags{justify-content:center}}
+.host{margin-top:56px;display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center;padding:36px 40px;background:var(--sand);border-radius:var(--radius)}
+.host-ph{width:200px;aspect-ratio:1;border-radius:50%;overflow:hidden;background:#e4d8c6}
+.host-ph img{width:100%;height:100%;object-fit:cover}
+.host h3{font-size:1.5rem;margin-bottom:4px}
+.host .role{color:var(--accent);font-size:.92rem;font-weight:500;margin-bottom:14px}
+.host blockquote{font-family:"Noto Serif KR",serif;font-size:1.08rem;color:var(--ink);line-height:1.7;margin-bottom:14px}
+.host p{color:var(--body);font-size:.96rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{font-size:.82rem;color:var(--muted);padding:3px 11px;border:1px solid #d5c9b7;border-radius:999px}
+@media (max-width:760px){.host{grid-template-columns:1fr;text-align:center;justify-items:center;padding:32px 24px}.host-ph{width:140px}.tags{justify-content:center}}
 
 /* classes */
-.classes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media (max-width:900px){.classes{grid-template-columns:1fr}}
-.cls{position:relative;padding:34px 28px;border-radius:26px;background:rgba(20,15,51,.6);border:1px solid var(--line);overflow:hidden;transition:transform .4s}
-.cls:hover{transform:translateY(-8px)}
-.cls::before{content:"";position:absolute;inset:0;padding:2px;border-radius:inherit;background:linear-gradient(135deg,var(--a),var(--b));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.cls::after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:var(--a);filter:blur(70px);opacity:.35;right:-60px;bottom:-60px}
-.cls-no{position:absolute;top:18px;right:24px;font-family:"Black Han Sans",sans-serif;font-size:3.4rem;line-height:1;background:linear-gradient(135deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.6}
-.cls-ico{font-size:2.4rem;margin-bottom:16px}
-.cls h3{font-size:1.4rem;line-height:1.35;margin-bottom:12px}
-.cls h3 span{font-size:1.05rem;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
-.cls p{color:var(--muted);font-size:.97rem;position:relative}
-.contact{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;padding:26px 30px;border-radius:22px;background:linear-gradient(90deg,var(--violet),var(--pink));box-shadow:0 20px 60px rgba(123,92,255,.35)}
-.contact strong{font-size:1.6rem;font-weight:400;display:block}
-.contact p{opacity:.9}
-.btn.mail{background:#fff;color:#2a1663;word-break:break-all}
+.classes{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);overflow:hidden}
+@media (max-width:880px){.classes{grid-template-columns:1fr}}
+.cls{padding:34px 30px}
+.cls+.cls{border-left:1px solid var(--line)}
+@media (max-width:880px){.cls+.cls{border-left:0;border-top:1px solid var(--line)}}
+.cls .type{font-size:.82rem;font-weight:700;color:var(--green);letter-spacing:.06em}
+.cls h3{font-size:1.25rem;margin:8px 0 12px;line-height:1.45}
+.cls p{color:var(--muted);font-size:.95rem}
+.contact{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:26px 30px;border-radius:var(--radius);background:var(--ink);color:#e9e1d5}
+.contact strong{font-family:"Noto Serif KR",serif;color:#fff;font-size:1.2rem;display:block}
+.contact p{font-size:.93rem;opacity:.8}
+.btn.mail{background:var(--paper);color:var(--ink);word-break:break-all}
+.btn.mail:hover{background:#fff}
 
-/* blog posts */
-.posts{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:18px}
-.post{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:24px;min-height:190px;border-radius:22px;overflow:hidden;background:linear-gradient(150deg,var(--a),var(--b));transition:transform .4s,box-shadow .4s}
-.post:hover{transform:translateY(-6px) rotate(.4deg);box-shadow:0 24px 60px rgba(0,0,0,.45)}
-.post::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 12px,transparent 12px 24px)}
-.post>*{position:relative}
-.post.big{grid-row:span 2}
-.post .kind{align-self:flex-start;font-size:.75rem;font-weight:900;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.3);margin-bottom:auto}
-.post h3{font-size:1.2rem;line-height:1.4}
-.post.big h3{font-family:"Black Han Sans",sans-serif;font-weight:400;font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.15}
-.post p{opacity:.9;font-size:.95rem}
-.post .go{font-weight:700;opacity:.9}
-@media (max-width:900px){.posts{grid-template-columns:1fr 1fr;grid-template-rows:auto}.post.big{grid-column:span 2;grid-row:auto;min-height:280px}}
-@media (max-width:560px){.posts{grid-template-columns:1fr}.post.big{grid-column:auto}}
-.notes{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.notes-h{font-weight:900;color:var(--gold);margin-right:6px}
-.notes a{padding:9px 16px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:.92rem;transition:.25s}
-.notes a:hover{background:rgba(255,255,255,.14)}
+/* videos */
+.featured{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:center;margin-bottom:56px}
+@media (max-width:880px){.featured{grid-template-columns:1fr;gap:24px}}
+.frame{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;cursor:pointer;background:var(--sand);box-shadow:var(--shadow)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.play{position:absolute;inset:0;display:grid;place-items:center;background:rgba(30,20,10,.12);transition:background .2s}
+.play i{width:64px;height:64px;border-radius:50%;background:rgba(255,253,249,.94);display:grid;place-items:center;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.play i::before{content:"";border-left:18px solid var(--ink);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.frame:hover .play,.vcard:hover .play{background:rgba(30,20,10,.25)}
+.featured .ep{font-size:.85rem;font-weight:700;color:var(--accent);letter-spacing:.06em}
+.featured h3{font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.45;margin:10px 0 14px}
+.featured p{color:var(--muted);margin-bottom:24px}
+
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);padding:7px 16px;border-radius:999px;cursor:pointer;transition:.2s}
+.filters button:hover{color:var(--ink);border-color:#cfc3b2}
+.filters button.on{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 22px}
+@media (max-width:880px){.vgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.vgrid{grid-template-columns:1fr}}
+.vcard{cursor:pointer}
+.vcard .thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--sand)}
+.vcard .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.vcard:hover .thumb img{transform:scale(1.03)}
+.vcard .play{background:transparent;opacity:0;transition:opacity .2s}
+.vcard:hover .play{opacity:1}
+.vcard .play i{width:48px;height:48px}
+.vcard .play i::before{border-left-width:14px;border-top-width:9px;border-bottom-width:9px;margin-left:4px}
+.vcard .meta{padding-top:12px}
+.vcard .info{font-size:.8rem;color:var(--muted);display:flex;gap:8px;align-items:center}
+.vcard .info b{color:var(--accent);font-weight:700}
+.vcard h4{font-size:1rem;font-weight:500;color:var(--ink);line-height:1.55;margin-top:4px}
+.vcard:hover h4{color:var(--accent-d)}
+.more{display:flex;justify-content:center;margin-top:44px;gap:10px;flex-wrap:wrap}
+
+/* blog */
+.posts{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+@media (max-width:880px){.posts{grid-template-columns:1fr}}
+.post-main{display:flex;flex-direction:column;justify-content:flex-end;padding:36px;min-height:340px;border-radius:var(--radius);background:var(--green);color:#e8efe9;transition:background .2s}
+.post-main:hover{background:#365248}
+.post-main .kind{font-size:.82rem;opacity:.8;margin-bottom:auto}
+.post-main h3{font-family:"Noto Serif KR",serif;color:#fff;font-size:clamp(1.5rem,3vw,2rem);line-height:1.4;margin-bottom:12px}
+.post-main p{font-size:.95rem;opacity:.85;margin-bottom:18px}
+.post-main .go{font-size:.92rem;font-weight:500}
+.post-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.post-list a{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 4px;border-bottom:1px solid var(--line);transition:background .2s}
+.post-list a:hover{background:var(--sand)}
+.post-list .kind{grid-column:1;font-size:.78rem;color:var(--accent);font-weight:500}
+.post-list h4{grid-column:1;font-size:1.02rem;font-weight:500;color:var(--ink);line-height:1.5}
+.post-list .arr{grid-column:2;grid-row:1/3;align-self:center;color:var(--muted)}
 
 /* instagram */
 .igrow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-@media (max-width:900px){.igrow{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:560px){.igrow{grid-template-columns:repeat(2,1fr)}}
-.igc{aspect-ratio:3/4;border-radius:18px;padding:18px 16px;display:flex;flex-direction:column;justify-content:center;gap:10px;background:var(--bg);text-align:center;transition:transform .4s,box-shadow .4s;position:relative;overflow:hidden}
-.igc:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 20px 50px rgba(214,41,118,.4)}
-.igc small{font-size:.75rem;opacity:.85;font-weight:700}
-.igc b{font-family:"Black Han Sans",sans-serif;font-weight:400;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.25}
-.igc em{font-style:normal;color:#ffe066}
-.igc span{font-size:.72rem;opacity:.8}
-.igc.light{color:#222}.igc.light em{color:#d6336c}.igc.light b{color:#d6336c}
-.igc::after{content:"";position:absolute;top:10px;right:10px;width:18px;height:18px;border:2px solid currentColor;border-radius:5px;opacity:.6}
+@media (max-width:880px){.igrow{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:540px){.igrow{grid-template-columns:repeat(2,1fr)}}
+.igc{aspect-ratio:4/5;border-radius:10px;padding:18px 14px;display:flex;flex-direction:column;justify-content:center;gap:8px;text-align:center;background:var(--c);color:#fff;transition:transform .25s,box-shadow .25s}
+.igc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.igc small{font-size:.72rem;opacity:.8}
+.igc b{font-family:"Noto Serif KR",serif;font-size:clamp(.98rem,1.7vw,1.15rem);line-height:1.45}
+.igc span{font-size:.72rem;opacity:.75}
+.igc.light{color:var(--ink);border:1px solid var(--line)}
 
-footer{padding:40px 0 50px;color:var(--muted);font-size:.9rem;text-align:center}
-footer .links{display:flex;gap:18px;justify-content:center;margin-bottom:12px}
-footer .links a:hover{color:#fff}
+/* channels */
+.channels{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:880px){.channels{grid-template-columns:1fr}}
+.ch{display:flex;flex-direction:column;padding:30px 28px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);transition:border-color .2s,box-shadow .2s}
+.ch:hover{border-color:#cfc3b2;box-shadow:var(--shadow)}
+.ch .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;margin-bottom:18px;background:var(--c)}
+.ch .ico svg{width:22px;height:22px}
+.ch h3{font-size:1.2rem;margin-bottom:6px}
+.ch p{color:var(--muted);font-size:.94rem;flex:1}
+.ch .handle{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:.9rem;color:var(--ink);font-weight:500;gap:10px}
+.ch .handle span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* closing */
+.closing{text-align:center;padding:clamp(48px,7vw,72px) 24px;border-radius:var(--radius);background:var(--sand)}
+.closing h2{font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.45;margin-bottom:14px}
+.closing p{color:var(--muted);margin-bottom:28px}
+.closing .cta-row{justify-content:center}
+
+footer{border-top:1px solid var(--line);padding:36px 0 44px;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer .links{display:flex;gap:20px}
+footer a:hover{color:var(--ink)}
 
 /* modal */
-.modal{position:fixed;inset:0;z-index:100;background:rgba(5,3,15,.85);backdrop-filter:blur(8px);display:none;place-items:center;padding:16px}
-.modal.open{display:grid;animation:fade .3s}
-@keyframes fade{from{opacity:0}}
-.modal .box{width:min(1000px,100%);aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:0 30px 100px rgba(123,92,255,.5);background:#000}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(30,24,18,.82);display:none;place-items:center;padding:16px}
+.modal.open{display:grid}
+.modal .box{width:min(960px,100%);aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
 .modal iframe{width:100%;height:100%;border:0}
-.modal .x{position:absolute;top:18px;right:18px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:#111;font-size:1.4rem;cursor:pointer}
+.modal .x{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:50%;border:0;background:var(--paper);color:var(--ink);font-size:1.1rem;cursor:pointer}
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
-<div class="grid-bg"></div>
 
 <nav>
   <div class="wrap">
-    <a href="#top" class="logo display">
+    <a href="#top" class="logo serif">
       <img src="https://yt3.googleusercontent.com/DIlhgvPJqixxjpmbX3boRq_5Zn9wk3ph1y4Ae8iFNyf_1a1i8x4KRh33a6POR6ScYgn7p104rmQ=s88-c-k-c0x00ffffff-no-rj" alt="">
-      <span class="grad">쓸공언니</span>
+      쓸공언니
     </a>
     <div class="nav-links">
       <a href="#about">소개</a>
@@ -280,111 +227,103 @@ footer .links a:hover{color:#fff}
       <a href="#blog">블로그</a>
       <a href="#channels">채널</a>
     </div>
-    <a class="nav-cta" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w?sub_confirmation=1" target="_blank" rel="noopener">구독하기</a>
+    <a class="nav-cta" href="mailto:passion.econclass@gmail.com">강의 문의</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <div class="badge"><span class="dot"></span>매주 새 에피소드 업로드 중</div>
-      <h1 class="display"><span class="grad">쓸공언니</span><small>쓸데없이 공부 많이하는 언니들</small></h1>
-      <p class="lead"><b>미국회계사 언니들</b>이 들려주는 국제 경제 뉴스와 경제·투자 책 이야기. 어려운 경제를 쉽고 재밌게 풀어 드려요.</p>
+      <span class="kicker">쓸데없이 공부 많이하는 언니들</span>
+      <h1 class="serif">경제가 처음인<br>어른을 위한<br><span class="accent">따뜻한 경제 공부</span></h1>
+      <p class="lead">미국회계사 언니들이 국제 경제 뉴스와 경제·투자 책을 쉽고 차분하게 풀어 드립니다. 뉴스의 행간부터 고전 경제학까지, 매주 한 걸음씩 함께 읽어요.</p>
       <div class="cta-row">
-        <a class="btn btn-yt" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>유튜브 보기</a>
-        <a class="btn btn-ig" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>인스타그램</a>
-        <a class="btn btn-nv" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.3 12.8 7.4 0H0v24h7.7V11.2L16.6 24H24V0h-7.7z"/></svg>블로그</a>
+        <a class="btn btn-primary" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>유튜브에서 보기</a>
+        <a class="btn btn-line" href="#class">클래스 안내</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="ring"></div>
-      <div class="avatar"><img src="https://yt3.googleusercontent.com/DIlhgvPJqixxjpmbX3boRq_5Zn9wk3ph1y4Ae8iFNyf_1a1i8x4KRh33a6POR6ScYgn7p104rmQ=s900-c-k-c0x00ffffff-no-rj" alt="쓸공언니 채널 프로필"></div>
-      <div class="chip c1"><span class="em">📈</span>국제 경제 뉴스</div>
-      <div class="chip c2"><span class="em">📚</span>경제·투자 책</div>
-      <div class="chip c3"><span class="em">🧾</span>미국회계사(US CPA)</div>
+    <div class="portrait">
+      <div class="ph"><img src="https://yt3.googleusercontent.com/DIlhgvPJqixxjpmbX3boRq_5Zn9wk3ph1y4Ae8iFNyf_1a1i8x4KRh33a6POR6ScYgn7p104rmQ=s900-c-k-c0x00ffffff-no-rj" alt="쓸공언니"></div>
+      <div class="note"><b>207화 공개</b>매주 새 에피소드</div>
     </div>
   </div>
 </header>
 
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track" id="ticker"></div>
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><div class="num">207+</div><div class="lbl">누적 에피소드</div></div>
+    <div class="fact"><div class="num">1,270+</div><div class="lbl">유튜브 구독자</div></div>
+    <div class="fact"><div class="num">192+</div><div class="lbl">블로그 이웃</div></div>
+    <div class="fact"><div class="num">US CPA</div><div class="lbl">미국회계사 진행</div></div>
+  </div>
 </div>
 
 <section id="about">
   <div class="wrap">
-    <div class="stats reveal">
-      <div class="stat" style="--c:var(--pink)"><div class="num"><span class="count" data-to="207">0</span>+</div><div class="lbl">누적 에피소드</div></div>
-      <div class="stat" style="--c:var(--violet)"><div class="num"><span class="count" data-to="1270">0</span>+</div><div class="lbl">유튜브 구독자</div></div>
-      <div class="stat" style="--c:var(--mint)"><div class="num"><span class="count" data-to="192">0</span>+</div><div class="lbl">블로그 이웃</div></div>
-      <div class="stat" style="--c:var(--gold)"><div class="num">US CPA</div><div class="lbl">미국회계사 언니들</div></div>
+    <div class="sec-head reveal">
+      <span class="label">ABOUT</span>
+      <h2 class="sec-title serif">쓸데없을 만큼 깊게 공부하고,<br>쓸모 있을 만큼 쉽게 전합니다</h2>
+      <p class="sec-sub">어렵게만 느껴지는 경제를 생활의 언어로 옮기는 일. 쓸공언니가 다루는 세 가지 주제입니다.</p>
     </div>
-
-    <div style="margin-top:90px" class="reveal">
-      <span class="eyebrow">ABOUT US</span>
-      <h2 class="sec-title display">경제가 어렵다고요?<br><span class="grad">언니들이 먼저 공부했어요.</span></h2>
-      <p class="sec-sub"><b style="color:#fff">경제가 처음인 어른을 위한 공부.</b> 쓸데없을 만큼 깊게 공부하고, 쓸모 있을 만큼 쉽게 전해 드려요. 뉴스 뒤에 숨은 흐름부터 고전 경제학까지 함께 읽어요.</p>
-    </div>
-    <div class="about">
-      <div class="card reveal" style="--bgc:linear-gradient(135deg,var(--pink),var(--violet))"><div class="ico">🌍</div><h3>국제 경제 뉴스</h3><p>환율, 유가, 금리, 중앙은행 이야기까지. 세계 경제의 흐름이 내 지갑에 어떤 영향을 주는지 짚어 드려요.</p></div>
-      <div class="card reveal" style="--bgc:linear-gradient(135deg,var(--gold),var(--pink))"><div class="ico">📖</div><h3>쉽고 재밌는 국부론</h3><p>애덤 스미스의 『국부론』을 한 장씩 읽어요. 『칩 워』 같은 화제의 경제·투자 책 리뷰도 함께해요.</p></div>
-      <div class="card reveal" style="--bgc:linear-gradient(135deg,var(--mint),var(--sky))"><div class="ico">🤖</div><h3>AI · 테크 · 투자</h3><p>엔비디아, OpenAI, 스페이스X, 팔란티어까지. 시장을 움직이는 기업과 기술을 회계사의 눈으로 분석해요.</p></div>
+    <div class="pillars">
+      <div class="pillar reveal"><span class="no">01</span><h3 class="serif">국제 경제 뉴스</h3><p>환율, 유가, 금리, 중앙은행. 세계 경제의 흐름이 우리 집 살림에 어떤 영향을 주는지 짚어 드립니다.</p></div>
+      <div class="pillar reveal"><span class="no">02</span><h3 class="serif">경제·투자 책 읽기</h3><p>애덤 스미스의 『국부론』을 한 장씩 함께 읽고, 『칩 워』 같은 화제의 책을 리뷰합니다.</p></div>
+      <div class="pillar reveal"><span class="no">03</span><h3 class="serif">기업과 기술, 그리고 투자</h3><p>엔비디아, OpenAI, 팔란티어까지. 시장을 움직이는 기업을 회계사의 시선으로 차분히 분석합니다.</p></div>
     </div>
 
     <div class="host reveal">
-      <div class="host-pic"><span>👩‍🏫</span></div>
+      <div class="host-ph"><img src="https://yt3.googleusercontent.com/DIlhgvPJqixxjpmbX3boRq_5Zn9wk3ph1y4Ae8iFNyf_1a1i8x4KRh33a6POR6ScYgn7p104rmQ=s400-c-k-c0x00ffffff-no-rj" alt=""></div>
       <div>
-        <span class="eyebrow">HOST</span>
-        <h3 class="display">쓸공언니 <span class="grad">최열정</span></h3>
-        <p>경제를 배우고, 육아를 고민하고, 건강을 챙기는 40대의 진짜 기록. 팟캐스트 「쓸공언니」를 진행하고, 경제특강과 경제스터디를 운영하고 있어요.</p>
-        <div class="tags"><span>#팟캐스트</span><span>#쓸공언니</span><span>#경제공부</span><span>#경제책읽기</span><span>#미국회계사</span></div>
+        <h3 class="serif">최열정</h3>
+        <div class="role">쓸공언니 진행 · 미국회계사(US CPA)</div>
+        <blockquote>“경제를 배우고, 육아를 고민하고, 건강을 챙기는 40대의 진짜 기록.”</blockquote>
+        <p>팟캐스트 「쓸공언니」를 진행하며 경제특강 「경제뉴스 읽기 첫걸음」과 경제스터디를 운영하고 있습니다.</p>
+        <div class="tags"><span>팟캐스트</span><span>경제공부</span><span>경제책 읽기</span><span>경제뉴스</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="class">
+<section id="class" class="alt">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">CLASS &amp; STUDY</span>
-      <h2 class="sec-title display">함께 공부해요, <span class="grad">경제 클래스</span></h2>
-      <p class="sec-sub">영상으로 보는 것을 넘어, 직접 배우고 함께 읽는 자리를 만들고 있어요.</p>
+    <div class="sec-head reveal">
+      <span class="label">CLASS &amp; STUDY</span>
+      <h2 class="sec-title serif">함께 배우는 자리</h2>
+      <p class="sec-sub">영상으로 보는 것을 넘어, 직접 배우고 함께 읽는 시간을 만듭니다.</p>
     </div>
-    <div class="classes">
-      <div class="cls reveal" style="--a:var(--pink);--b:var(--violet)">
-        <div class="cls-no">01</div>
-        <div class="cls-ico">🎓</div>
-        <h3>경제특강<br><span>「경제뉴스 읽기 첫걸음」</span></h3>
-        <p>경제 기사가 어렵게만 느껴지셨나요? 금리, 환율, 주식 시장의 기본 용어부터 기사 행간을 읽는 법까지 차근차근 알려 드려요.</p>
+    <div class="classes reveal">
+      <div class="cls">
+        <span class="type">경제특강</span>
+        <h3 class="serif">「경제뉴스 읽기 첫걸음」</h3>
+        <p>금리, 환율, 주식 시장의 기본 용어부터 기사의 행간을 읽는 법까지 차근차근 안내합니다.</p>
       </div>
-      <div class="cls reveal" style="--a:var(--gold);--b:var(--pink)">
-        <div class="cls-no">02</div>
-        <div class="cls-ico">📚</div>
-        <h3>경제스터디<br><span>함께 읽는 경제·투자 책</span></h3>
-        <p>『국부론』부터 하워드 막스, 『머니 트렌드』까지. 혼자 읽기 어려운 책을 함께 읽고 이야기 나눠요.</p>
+      <div class="cls">
+        <span class="type">경제스터디</span>
+        <h3 class="serif">함께 읽는 경제·투자 책</h3>
+        <p>『국부론』, 하워드 막스, 『머니 트렌드』까지. 혼자 읽기 어려운 책을 함께 읽고 이야기 나눕니다.</p>
       </div>
-      <div class="cls reveal" style="--a:var(--mint);--b:var(--sky)">
-        <div class="cls-no">03</div>
-        <div class="cls-ico">🎙️</div>
-        <h3>팟캐스트<br><span>「쓸공언니」</span></h3>
-        <p>출퇴근길, 집안일하면서 귀로 듣는 경제 공부. 유튜브 에피소드를 팟캐스트로도 들을 수 있어요.</p>
+      <div class="cls">
+        <span class="type">팟캐스트</span>
+        <h3 class="serif">「쓸공언니」</h3>
+        <p>출퇴근길이나 집안일을 하며 귀로 듣는 경제 공부. 에피소드를 팟캐스트로도 들을 수 있습니다.</p>
       </div>
     </div>
     <div class="contact reveal">
       <div>
-        <strong class="display">강의 · 협업 문의</strong>
+        <strong>강의 · 협업 문의</strong>
         <p>특강, 스터디, 강연 문의는 메일로 편하게 연락 주세요.</p>
       </div>
-      <a class="btn mail" href="mailto:passion.econclass@gmail.com">✉️ passion.econclass@gmail.com</a>
+      <a class="btn mail" href="mailto:passion.econclass@gmail.com">passion.econclass@gmail.com</a>
     </div>
   </div>
 </section>
 
 <section id="videos">
   <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">LATEST EPISODES</span>
-      <h2 class="sec-title display">따끈따끈한 <span class="grad">최신 에피소드</span></h2>
-      <p class="sec-sub">썸네일을 누르면 바로 재생돼요. 주제별로 골라 보세요.</p>
+    <div class="sec-head reveal">
+      <span class="label">EPISODES</span>
+      <h2 class="sec-title serif">최신 에피소드</h2>
+      <p class="sec-sub">썸네일을 누르면 바로 재생됩니다. 관심 있는 주제를 골라 보세요.</p>
     </div>
 
     <div class="featured reveal" id="featured"></div>
@@ -392,105 +331,80 @@ footer .links a:hover{color:#fff}
     <div class="filters" id="filters"></div>
     <div class="vgrid" id="vgrid"></div>
     <div class="more">
-      <button class="btn btn-ghost" id="moreBtn">더 보기 ＋</button>
-      <a class="btn btn-yt" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w/videos" target="_blank" rel="noopener">유튜브에서 전체 보기 →</a>
+      <button class="btn btn-line" id="moreBtn">더 보기</button>
+      <a class="btn btn-primary" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w/videos" target="_blank" rel="noopener">유튜브에서 전체 보기</a>
     </div>
   </div>
 </section>
 
-<section id="blog">
+<section id="blog" class="alt">
   <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">BLOG · 쓸공언니, 열정 기록장</span>
-      <h2 class="sec-title display">글로 읽는 <span class="grad">경제 노트</span></h2>
-      <p class="sec-sub">경제기사 큐레이션, 투자 철학, 책 이야기, 소비 습관까지. 영상에서 못다 한 이야기를 블로그에 꼼꼼히 기록해요.</p>
+    <div class="sec-head reveal">
+      <span class="label">BLOG · 쓸공언니, 열정 기록장</span>
+      <h2 class="sec-title serif">글로 읽는 경제 노트</h2>
+      <p class="sec-sub">경제기사 큐레이션과 경제 수업 노트. 영상에서 다 하지 못한 이야기를 글로 기록합니다.</p>
     </div>
-    <div class="posts">
-      <a class="post big reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener" style="--a:#0f8a6a;--b:#16c79a">
+    <div class="posts reveal">
+      <a class="post-main" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">
         <span class="kind">경제 수업 노트 · 투자 철학</span>
         <h3>비싸게 사지 않는 것,<br>투자자의 최고의 방어</h3>
-        <p>하워드 막스가 전하는 투자 원칙. "너무 비싸게 사지 말자"는 단순하지만 가장 강력한 철학을 정리했어요.</p>
-        <span class="go">읽으러 가기 →</span>
+        <p>하워드 막스가 전하는 투자 원칙. “너무 비싸게 사지 말자”는 단순하지만 강력한 철학을 정리했습니다.</p>
+        <span class="go">블로그에서 읽기 →</span>
       </a>
-      <a class="post reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener" style="--a:#3a2a1f;--b:#ff7a1a">
-        <span class="kind">경제기사 큐레이션</span>
-        <h3>AI 거품론 vs 기회론, 당신의 선택은?</h3>
-        <span class="go">→</span>
-      </a>
-      <a class="post reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener" style="--a:#2b2f45;--b:#ff4f6d">
-        <span class="kind">경제기사 큐레이션</span>
-        <h3>놓쳐버린 '갓비디아', 넥스트 엔비디아는?</h3>
-        <span class="go">→</span>
-      </a>
-      <a class="post reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener" style="--a:#3b1d1d;--b:#e8433a">
-        <span class="kind">경제기사 큐레이션</span>
-        <h3>중국 빅테크의 반격?</h3>
-        <span class="go">→</span>
-      </a>
-      <a class="post reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener" style="--a:#0e5e4c;--b:#2bb88a">
-        <span class="kind">경제 수업 노트</span>
-        <h3>복리와 장기투자, 투자자의 가장 강력한 무기</h3>
-        <span class="go">→</span>
-      </a>
-    </div>
-    <div class="notes reveal">
-      <span class="notes-h">콘텐츠 제작 노트</span>
-      <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">💰 저성장 시대, 배당투자가 답일까?</a>
-      <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">🛒 소비를 멈추면 보이는 것들</a>
-      <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">🏺 부자들의 소비 습관 5가지</a>
-      <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">🎧 쓸공언니 팟캐스트 이야기</a>
+      <div class="post-list">
+        <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><span class="kind">경제기사 큐레이션</span><h4>AI 거품론 vs 기회론, 당신의 선택은?</h4><span class="arr">→</span></a>
+        <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><span class="kind">경제기사 큐레이션</span><h4>놓쳐버린 ‘갓비디아’, 넥스트 엔비디아는?</h4><span class="arr">→</span></a>
+        <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><span class="kind">경제기사 큐레이션</span><h4>중국 빅테크의 반격?</h4><span class="arr">→</span></a>
+        <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><span class="kind">경제 수업 노트</span><h4>복리와 장기투자, 투자자의 가장 강력한 무기</h4><span class="arr">→</span></a>
+        <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><span class="kind">콘텐츠 제작 노트</span><h4>저성장 시대, 배당투자가 답일까?</h4><span class="arr">→</span></a>
+        <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener"><span class="kind">콘텐츠 제작 노트</span><h4>부자들의 소비 습관 5가지</h4><span class="arr">→</span></a>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="insta">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">INSTAGRAM</span>
-      <h2 class="sec-title display">카드뉴스로 보는 <span class="grad">오늘의 경제</span></h2>
-      <p class="sec-sub">책 소개, 폭락장 마인드셋, 은퇴 설계까지. 인스타그램에서 짧고 굵게 만나요.</p>
+    <div class="sec-head reveal">
+      <span class="label">INSTAGRAM</span>
+      <h2 class="sec-title serif">카드뉴스로 만나는 경제</h2>
+      <p class="sec-sub">책 소개, 하락장 마음가짐, 은퇴 설계까지. 짧고 단정하게 정리합니다.</p>
     </div>
     <div class="igrow">
-      <a class="igc reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener" style="--bg:linear-gradient(160deg,#2a2018,#6b4a22)"><small>이번에 쓸공언니에서는</small><b>어떤 <em>책</em>을<br>공부해 볼까요?</b><span>머니 트렌드 2027</span></a>
-      <a class="igc reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener" style="--bg:#4a8db5"><small>쓸공언니</small><b>폭락장,<br>마음 굳게 먹으면<br><em>버틸 수 있을까?</em></b><span>폭락장에서 나를 지켜 줄 장치</span></a>
-      <a class="igc light reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener" style="--bg:#efebe3"><small>리포트</small><b>43세에 퇴직,<br>인생은 80대까지</b><span>남은 30년, 무엇으로 살아야 할까</span></a>
-      <a class="igc reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener" style="--bg:#4a8db5"><small>쓸공언니</small><b>역사는 세 번<br>경고했다<br><em>우리는 왜 또 당황할까?</em></b><span>폭락장을 떠나는 사람은…</span></a>
-      <a class="igc reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener" style="--bg:linear-gradient(160deg,#1f9e6e,#5fd38f)"><small>오늘의 한 권</small><b>THE<br>LET THEM<br>THEORY</b><span>렛뎀 이론</span></a>
+      <a class="igc reveal" style="--c:#5a4636" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>이번 주의 책</small><b>어떤 책을<br>공부해 볼까요?</b><span>머니 트렌드 2027</span></a>
+      <a class="igc reveal" style="--c:#4f6f80" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>쓸공언니</small><b>폭락장,<br>마음 굳게 먹으면<br>버틸 수 있을까?</b><span>나를 지켜 줄 장치</span></a>
+      <a class="igc light reveal" style="--c:#efe8dc" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>리포트</small><b>43세에 퇴직,<br>인생은 80대까지</b><span>남은 30년, 무엇으로 살까</span></a>
+      <a class="igc reveal" style="--c:#4f6f80" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>쓸공언니</small><b>역사는 세 번<br>경고했다</b><span>우리는 왜 또 당황할까?</span></a>
+      <a class="igc reveal" style="--c:#3f5f52" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener"><small>오늘의 한 권</small><b>The Let Them<br>Theory</b><span>렛뎀 이론</span></a>
     </div>
   </div>
 </section>
 
-<section id="channels">
+<section id="channels" class="alt">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">FOLLOW US</span>
-      <h2 class="sec-title display">어디서든 <span class="grad">쓸공언니</span>를 만나요</h2>
-      <p class="sec-sub">영상은 유튜브, 짧은 경제 상식은 인스타그램, 깊이 있는 글은 블로그에서 만나요.</p>
+    <div class="sec-head center reveal">
+      <span class="label">CHANNELS</span>
+      <h2 class="sec-title serif">어디서든 쓸공언니를 만나세요</h2>
+      <p class="sec-sub">영상은 유튜브에서, 짧은 정리는 인스타그램에서, 깊이 있는 글은 블로그에서.</p>
     </div>
     <div class="channels">
-      <a class="ch yt reveal" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w" target="_blank" rel="noopener">
-        <div>
-          <div class="big"><svg viewBox="0 0 24 24" fill="#fff"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></div>
-          <h3>YouTube</h3>
-          <p>200편이 넘는 경제 에피소드. 국제 뉴스 해설부터 책 리뷰까지 영상으로 만나요.</p>
-        </div>
-        <div class="handle"><span>@쓸공언니</span><span class="arrow">→</span></div>
+      <a class="ch reveal" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w" target="_blank" rel="noopener">
+        <div class="ico" style="--c:#c4302b"><svg viewBox="0 0 24 24" fill="#fff"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></div>
+        <h3 class="serif">YouTube</h3>
+        <p>200편이 넘는 에피소드. 국제 뉴스 해설부터 책 리뷰까지 영상으로 만나 보세요.</p>
+        <div class="handle"><span>@쓸공언니</span><span>→</span></div>
       </a>
-      <a class="ch ig reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener">
-        <div>
-          <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></div>
-          <h3>Instagram</h3>
-          <p>경제가 처음인 어른을 위한 공부. 경제뉴스·책 읽기 카드뉴스와 특강·스터디 소식을 받아 보세요.</p>
-        </div>
-        <div class="handle"><span>@passion.econclass</span><span class="arrow">→</span></div>
+      <a class="ch reveal" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener">
+        <div class="ico" style="--c:#b0476e"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></div>
+        <h3 class="serif">Instagram</h3>
+        <p>경제뉴스·책 읽기 카드뉴스와 특강·스터디 소식을 전합니다.</p>
+        <div class="handle"><span>@passion.econclass</span><span>→</span></div>
       </a>
-      <a class="ch nv reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">
-        <div>
-          <div class="big"><svg viewBox="0 0 24 24" fill="#fff"><path d="M16.3 12.8 7.4 0H0v24h7.7V11.2L16.6 24H24V0h-7.7z"/></svg></div>
-          <h3>Naver Blog</h3>
-          <p>「쓸공언니, 열정 기록장」. 경제기사 큐레이션과 경제 수업 노트를 글로 꼼꼼하게 읽어 보세요.</p>
-        </div>
-        <div class="handle"><span>blog.naver.com/passionchoi55</span><span class="arrow">→</span></div>
+      <a class="ch reveal" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">
+        <div class="ico" style="--c:#2f8f5b"><svg viewBox="0 0 24 24" fill="#fff"><path d="M16.3 12.8 7.4 0H0v24h7.7V11.2L16.6 24H24V0h-7.7z" transform="scale(.75) translate(4 4)"/></svg></div>
+        <h3 class="serif">Naver Blog</h3>
+        <p>「쓸공언니, 열정 기록장」. 경제기사 큐레이션과 수업 노트를 글로 읽어 보세요.</p>
+        <div class="handle"><span>blog.naver.com/passionchoi55</span><span>→</span></div>
       </a>
     </div>
   </div>
@@ -498,13 +412,13 @@ footer .links a:hover{color:#fff}
 
 <section>
   <div class="wrap">
-    <div class="final reveal">
-      <h2 class="display">경제 공부,<br><span class="grad">오늘부터 같이 해요!</span></h2>
-      <p>구독과 팔로우만 하면 새 에피소드 소식을 가장 먼저 받아 볼 수 있어요.</p>
+    <div class="closing reveal">
+      <h2 class="serif">경제 공부, 오늘부터 함께 시작해요</h2>
+      <p>구독과 이웃 추가로 새 에피소드와 클래스 소식을 받아 보세요.</p>
       <div class="cta-row">
-        <a class="btn btn-yt" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w?sub_confirmation=1" target="_blank" rel="noopener">유튜브 구독하기</a>
-        <a class="btn btn-ig" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener">인스타 팔로우</a>
-        <a class="btn btn-nv" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">블로그 이웃 추가</a>
+        <a class="btn btn-primary" href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w?sub_confirmation=1" target="_blank" rel="noopener">유튜브 구독하기</a>
+        <a class="btn btn-line" href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener">인스타그램 팔로우</a>
+        <a class="btn btn-line" href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">블로그 이웃 추가</a>
       </div>
     </div>
   </div>
@@ -512,13 +426,16 @@ footer .links a:hover{color:#fff}
 
 <footer>
   <div class="wrap">
+    <div>
+      <div class="serif" style="font-size:1.05rem;margin-bottom:4px">쓸공언니</div>
+      강의 문의 · <a href="mailto:passion.econclass@gmail.com">passion.econclass@gmail.com</a><br>
+      © <span id="yr"></span> 쓸공언니. All rights reserved.
+    </div>
     <div class="links">
       <a href="https://www.youtube.com/channel/UCtzEc_tO0vJj-hMhgKLOQ3w" target="_blank" rel="noopener">YouTube</a>
       <a href="https://www.instagram.com/passion.econclass" target="_blank" rel="noopener">Instagram</a>
       <a href="https://blog.naver.com/passionchoi55" target="_blank" rel="noopener">Blog</a>
     </div>
-    <div style="margin-bottom:8px">강의 문의 · <a href="mailto:passion.econclass@gmail.com" style="color:#fff">passion.econclass@gmail.com</a></div>
-    © <span id="yr"></span> 쓸공언니 · 쓸데없이 공부 많이하는 언니들
   </div>
 </footer>
 
@@ -528,7 +445,7 @@ footer .links a:hover{color:#fff}
 </div>
 
 <script>
-// 최신 영상 목록 — 새 영상이 올라오면 맨 앞에 [영상ID, "제목"] 을 추가하세요.
+// 최신 영상 목록 — 새 영상이 올라오면 맨 앞에 ["영상ID", "제목"] 을 추가하세요.
 const VIDEOS = [
   ["8USZuGyIEdo","207화. AI가 다 해주는 시대 내 수고는 얼마일까요?"],
   ["onMk9HSRdKs","206화. 금융시장의 이해_ 자본시장_주식시장_유상증자"],
@@ -563,19 +480,18 @@ const VIDEOS = [
 ];
 
 const CATS = [
-  {key:"all",  label:"전체", color:"var(--gold)"},
-  {key:"book", label:"📖 국부론·책", color:"var(--gold)",  re:/국부론|리뷰|칩 워/},
-  {key:"ai",   label:"🤖 AI·테크",   color:"var(--mint)",  re:/AI|인공지능|OpenAI|엔비디아|팔란티어|스페이스|반도체/},
-  {key:"fin",  label:"🏦 금융·화폐", color:"var(--sky)",   re:/금융|화폐|신용|중앙 은행|스테이블|비트코인/},
-  {key:"mkt",  label:"📈 투자·시장", color:"var(--pink)",  re:/폭락|주식|전망|생산성/},
-  {key:"news", label:"🌍 경제 뉴스", color:"#c9b8ff",      re:/환율|유가|전쟁|경제전망/}
+  {key:"all",  label:"전체"},
+  {key:"book", label:"국부론·책",  re:/국부론|리뷰|칩 워/},
+  {key:"ai",   label:"AI·테크",    re:/AI|인공지능|OpenAI|엔비디아|팔란티어|스페이스|반도체/},
+  {key:"fin",  label:"금융·화폐",  re:/금융|화폐|신용|중앙 은행|스테이블|비트코인/},
+  {key:"mkt",  label:"투자·시장",  re:/폭락|주식|전망|생산성/},
+  {key:"news", label:"경제 뉴스",  re:/환율|유가|전쟁|경제전망/}
 ];
 const catOf = t => CATS.slice(1).find(c => c.re.test(t)) || CATS[5];
 const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const split = t => { const m = t.match(/^(\d+)화?\.\s*(.*)$/); return m ? [m[1], m[2]] : ["", t]; };
 const thumb = (id, q="hqdefault") => `https://i.ytimg.com/vi/${id}/${q}.jpg`;
 
-// featured
 const [fid, ftitle] = VIDEOS[0];
 const [fep, fname] = split(ftitle);
 document.getElementById("featured").innerHTML = `
@@ -584,13 +500,12 @@ document.getElementById("featured").innerHTML = `
     <div class="play"><i></i></div>
   </div>
   <div>
-    <span class="new">NEW · ${fep}화</span>
-    <h3>${esc(fname)}</h3>
-    <p>쓸공언니의 가장 최신 에피소드예요. 지금 바로 재생해 보세요!</p>
-    <a class="btn btn-yt" href="https://www.youtube.com/watch?v=${fid}" target="_blank" rel="noopener">유튜브에서 보기 →</a>
+    <span class="ep">최신 · ${fep}화</span>
+    <h3 class="serif">${esc(fname)}</h3>
+    <p>쓸공언니의 가장 최근 에피소드입니다.</p>
+    <a class="btn btn-line" href="https://www.youtube.com/watch?v=${fid}" target="_blank" rel="noopener">유튜브에서 보기 →</a>
   </div>`;
 
-// filters + grid
 let cur = "all", shown = 9;
 const grid = document.getElementById("vgrid"), moreBtn = document.getElementById("moreBtn");
 document.getElementById("filters").innerHTML = CATS.map(c =>
@@ -603,11 +518,11 @@ document.getElementById("filters").addEventListener("click", e => {
 });
 function render(){
   const list = VIDEOS.slice(1).filter(([,t]) => cur === "all" || catOf(t).key === cur);
-  grid.innerHTML = list.slice(0, shown).map(([id, t], i) => {
-    const [ep, name] = split(t), c = catOf(t);
-    return `<article class="vcard" data-id="${id}" style="animation-delay:${(i%9)*60}ms">
-      <div class="thumb"><img loading="lazy" src="${thumb(id)}" alt=""><span class="ep">EP.${ep}</span><div class="play"><i></i></div></div>
-      <div class="meta"><span class="tag" style="--tc:${c.color}">${c.label.replace(/^\S+\s/,"")}</span><h4>${esc(name)}</h4></div>
+  grid.innerHTML = list.slice(0, shown).map(([id, t]) => {
+    const [ep, name] = split(t);
+    return `<article class="vcard" data-id="${id}">
+      <div class="thumb"><img loading="lazy" src="${thumb(id)}" alt=""><div class="play"><i></i></div></div>
+      <div class="meta"><div class="info"><b>${ep}화</b><span>·</span><span>${catOf(t).label}</span></div><h4>${esc(name)}</h4></div>
     </article>`;
   }).join("");
   moreBtn.style.display = list.length > shown ? "" : "none";
@@ -615,7 +530,6 @@ function render(){
 moreBtn.addEventListener("click", () => { shown += 9; render(); });
 render();
 
-// modal player
 const modal = document.getElementById("modal"), box = document.getElementById("modalBox");
 document.addEventListener("click", e => {
   const el = e.target.closest("[data-id]"); if (!el) return;
@@ -627,22 +541,9 @@ document.getElementById("closeModal").addEventListener("click", closeModal);
 modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
-// ticker
-const words = ["국제 경제 뉴스 ▲","환율 ▼","국부론 ▲","금리 ▲","AI 혁명 ▲","유가 ▼","반도체 ▲","중앙은행 ▲","비트코인 ▼","미국 주식 ▲","스테이블코인 ▲","투자 책 리뷰 ▲"];
-const tk = words.map(w => `<span>${w.replace(/([▲▼])/, m => `<b class="${m==="▲"?"up":"dn"}">${m}</b>`)} ✦</span>`).join("");
-document.getElementById("ticker").innerHTML = tk + tk;
-
-// reveal + counters
 const io = new IntersectionObserver(es => es.forEach(en => {
-  if (!en.isIntersecting) return;
-  en.target.classList.add("in");
-  en.target.querySelectorAll(".count").forEach(el => {
-    const to = +el.dataset.to, t0 = performance.now(), d = 1600;
-    const step = now => { const p = Math.min((now - t0) / d, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))).toLocaleString("ko-KR"); if (p < 1) requestAnimationFrame(step); };
-    requestAnimationFrame(step);
-  });
-  io.unobserve(en.target);
-}), {threshold:.15});
+  if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+}), {threshold:.12});
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 document.getElementById("yr").textContent = new Date().getFullYear();
 </script>
